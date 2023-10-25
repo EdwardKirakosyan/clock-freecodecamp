@@ -4,6 +4,7 @@
   margin: 0;
   line-height: 1.6;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -55,5 +56,20 @@ body {
 }
 
 button {
+  cursor: pointer;
   margin: .3em;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  padding: .5em 2em;
+}
+
+button:hover {
+  background-color: rgba(0, 217, 0, 0.557);
+  color: white;
+}
+
+button:active {
+  background-color: rgba(0, 144, 0, 0.329);
+  color: white;
 }
