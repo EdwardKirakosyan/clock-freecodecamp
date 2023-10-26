@@ -12,6 +12,8 @@ export default function App() {
     }
   }, 1000)
 
+  console.log(333)
+
   function sessionDecrement() {
     if (sessionState > 1) {
       setSessionState(sessionState - 1)
@@ -26,11 +28,12 @@ export default function App() {
     }
   }
 
-  function breakDecrement() {}
-  sessionState > 1 && setBreakState(breakState - 1)
+  function breakDecrement() {
+    breakState > 1 && setBreakState(breakState - 1)
+  }
 
   function breakIncrement() {
-    sessionState < 60 && setBreakState(breakState + 1)
+    breakState < 60 && setBreakState(breakState + 1)
   }
 
   function playHandling() {
